@@ -1,1 +1,1 @@
-export { default as authApi } from './services';
+export { default as breweriesServices } from './services';

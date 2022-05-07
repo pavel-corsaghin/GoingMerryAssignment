@@ -2,11 +2,11 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, Text, View } from 'react-native';
-import { MainStackProps, MainTabBarParamList, MainTabBarRoute } from './@types';
-import BookmarkScreen from 'app/screens/Bookmark';
-import HomeScreen from 'app/screens/Home';
+import { MainTabBarParamList, MainTabBarRoute } from './@types';
+import BookmarkScreen from '../screens/Bookmark';
+import HomeScreen from '../screens/Home';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { Colors } from 'app/assets/colors';
+import { Colors } from '../assets/colors';
 
 type Screen = {
   name: MainTabBarRoute;
@@ -16,10 +16,15 @@ type Screen = {
 };
 
 const screens: Screen[] = [
-  { name: 'Home', title: 'Home', component: HomeScreen, iconName: 'home' },
+  {
+    name: 'Home',
+    title: 'home',
+    component: HomeScreen,
+    iconName: 'home',
+  },
   {
     name: 'Bookmark',
-    title: 'Bookmark',
+    title: 'bookmark',
     component: BookmarkScreen,
     iconName: 'bookmark',
   },
@@ -27,7 +32,7 @@ const screens: Screen[] = [
 
 const Tab = createBottomTabNavigator<MainTabBarParamList>();
 
-function MainTabBar({ navigation }: MainStackProps<'Main'>) {
+function MainTabBar() {
   const { t } = useTranslation();
 
   return (

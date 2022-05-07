@@ -5,11 +5,11 @@ import {
 } from '@react-navigation/stack';
 import { MainStackParamList, MainStackRoute } from './@types';
 import MainTabBar from './MainTabBar';
-import DetailScreen from 'app/screens/Detail';
+import DetailScreen from '../screens/Detail';
+import i18next from 'i18next';
 
 type Screen = {
   name: MainStackRoute;
-  title: string;
   component: React.ComponentType<any>;
   options: StackNavigationOptions;
 };
@@ -18,18 +18,17 @@ const Stack = createStackNavigator<MainStackParamList>();
 const screens: Screen[] = [
   {
     name: 'Main',
-    title: ' ',
     component: MainTabBar,
     options: {
       headerShown: false,
+      title: '',
     },
   },
   {
     name: 'Detail',
-    title: ' ',
     component: DetailScreen,
     options: {
-      headerShown: false,
+      title: i18next.t('detail'),
     },
   },
 ];

@@ -3,13 +3,11 @@ import { NavigationContainer, Theme } from '@react-navigation/native';
 import { StatusBar } from 'react-native';
 import MainStack from './MainStack';
 
-interface IProps {
+type Props = {
   theme: Theme;
-}
+};
 
-const Navigator: React.FC<IProps> = (props: IProps) => {
-  const { theme } = props;
-
+const Navigator: React.FC<Props> = ({ theme }) => {
   return (
     <NavigationContainer theme={theme}>
       <StatusBar barStyle={theme.dark ? 'light-content' : 'dark-content'} />

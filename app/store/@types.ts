@@ -8,10 +8,3 @@ export type AppThunk<ReturnType = void> = ThunkAction<
   unknown,
   Action<string>
 >;
-
-export enum APICallingState {
-  None,
-  Doing,
-  Success,
-  Fail,
-}

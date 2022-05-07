@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { Colors } from '../colors';
-import map from './Map';
+import search from './Search';
 import { IconBodyType } from './@types';
 
 type Props = IconBodyType & {
@@ -10,7 +10,7 @@ type Props = IconBodyType & {
 };
 
 const icons: { [name: string]: React.ComponentType<any> } = {
-  map,
+  search,
 };
 
 const Icon = ({ name, color, size, style }: Props) => {

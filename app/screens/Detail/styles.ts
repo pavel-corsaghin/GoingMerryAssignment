@@ -1,19 +1,39 @@
+import { Colors } from '../../assets/colors';
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  container: {
+  safeview: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
-  login: {
+  detailContainer: {
+    flex: 1,
+  },
+  cardView: {
+    backgroundColor: Colors.white400,
+    flexDirection: 'column',
+    marginHorizontal: 20,
+    marginTop: 32,
+    borderRadius: 12,
     padding: 8,
   },
-  forgot: {
-    marginTop: 12,
+  divider: {
+    marginHorizontal: 16,
+    marginVertical: 8,
+    height: 0.5,
   },
-  labelStyle: {
-    fontSize: 12,
+  viewWebsiteButton: {
+    height: 48,
+    marginHorizontal: 24,
+    marginBottom: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  toggleBookmarkButton: {
+    height: 48,
+    marginHorizontal: 24,
+    marginBottom: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 

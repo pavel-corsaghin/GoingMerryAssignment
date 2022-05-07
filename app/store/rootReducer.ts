@@ -1,12 +1,12 @@
 import { combineReducers } from '@reduxjs/toolkit';
-import authReducer from './@slices/auth';
 import counterReducer from './@slices/counter';
 import themeReducer from './@slices/theme';
+import bookmarkReducer from './@slices/bookmark';
 
 const rootReducer = combineReducers({
-  auth: authReducer,
   counter: counterReducer,
   theme: themeReducer,
+  bookmark: bookmarkReducer,
 });
 
 export default rootReducer;

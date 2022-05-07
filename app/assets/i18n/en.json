@@ -1,9 +1,22 @@
 {
   "translation": {
-    "title_map": "Map",
-    "title_events": "Events",
-    "title_account": "Account",
-    "title_event_create": "Create Event",
-    "title_event_detail": "Event Detail"
+    "home": "Home",
+    "bookmark": "Bookmark",
+    "detail": "Detail",
+    "bookmark_empty": "Your bookmark list is empty",
+    "err_missing_web_url": "Website URL is missing",
+    "err_general": "There is an error occurred",
+    "err_no_results": "No search results",
+    "err_open_url": "Can not open the URL",
+    "view_website": "View website",
+    "remove_bookmark": "Remove bookmark",
+    "add_bookmark": "Add to bookmarks",
+    "name": "Name",
+    "type": "Type",
+    "address": "Address",
+    "updated_date": "Updated date",
+    "welcome": "Welcome to",
+    "app_name": "Breweries App",
+    "search_placeholder": "Search for brewery"
   }
 }
