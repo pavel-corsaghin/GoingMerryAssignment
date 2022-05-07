@@ -1,10 +1,10 @@
-# 🚀 React Native Sample
+# 🚀 Breweries App
 
-## Features
+## Libraries and framework used
 - [Typescript](https://www.typescriptlang.org/) support.
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [i18next](https://react.i18next.com/)
-- [React Navigation](https://reactnavigation.org/) with [Authentication flow](https://reactnavigation.org/docs/auth-flow) baked in & theming support.
+- [React Navigation](https://reactnavigation.org/).
 - [React Native Gesture Handler](https://github.com/kmagiera/react-native-gesture-handler)
 - [React Native Paper](https://callstack.github.io/react-native-paper/)- with theming support 
 - [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
@@ -14,9 +14,11 @@
 - [Jest](https://facebook.github.io/jest/)
 - [Eslint](http://eslint.org/) ([Airbnb config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb))
 
-## Getting Started
-
-1. Clone this repo, `git clone https://github.com/pavel-corsaghin/react-native-sample/.git <your project name>`
-2. Go to project's root directory, `cd <your project name>`
-3. Remove `.git` folder, `rm -rf .git`
-4. Use [React Native Rename](https://github.com/junedomingo/react-native-rename) to update project name `$ npx react-native-rename <newName>`
+## How to run
+1. Download and unzip project
+2. Go to project's root directory, `cd <project name>`
+3. Run `yarn` to install packages/dependencies
+4. To start metro server run `yarn start`
+5. Run `yarn ios` to lauch iOS and `yarn android` for android
+6. Run `yarn lint --fix` to format the code
+7. Run `yarn test` for testing
