@@ -2,6 +2,7 @@ import moment from 'moment';
 
 export enum DateFormat {
   default = 'MMM, DD YYYY',
+  time = 'HH:mm',
 }
 export const getFormattedDate = (
   raw: string | undefined,

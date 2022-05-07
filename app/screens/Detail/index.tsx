@@ -6,12 +6,13 @@ import styles from './styles';
 import InfoItem from './InfoItem';
 import { Button, Divider } from 'react-native-paper';
 import { MainStackProps } from '../../navigation/@types';
-import { getFormattedDate } from '../../utils/dateUtitls';
-import { Brewery, detailCombinedAddress } from '../../api/types/breweries';
+import { getFormattedDate } from '../../utils/dateUtils';
+import { Brewery } from '../../api/types/breweries';
 import { RootState } from '../../store/';
 import useBreweryDetail from './useBreweryDetail';
 import { openURL } from 'app/utils/urlUtils';
 import { useTranslation } from 'react-i18next';
+import { detailCombinedAddress } from '../../utils/breweryUtils';
 
 const Detail: React.FC<MainStackProps<'Detail'>> = ({ route }) => {
   const dispatch = useDispatch();

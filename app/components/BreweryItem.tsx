@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { Brewery, combinedAddress } from '../api/types/breweries';
+import { Brewery } from '../api/types/breweries';
 import { MainStackNavigation } from '../navigation/@types';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../store';
 import { Colors } from '../assets/colors';
 import { toggleBoorkmark } from '../store/@slices/bookmark';
+import { combinedAddress } from '../utils/breweryUtils';
 
 type Props = {
   item: Brewery;
