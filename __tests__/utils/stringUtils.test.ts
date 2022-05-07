@@ -1,11 +1,11 @@
-import { isNotUndefinedOrEmpty } from '../../app/utils/stringUtils';
+import { isNotEmpty } from '../../app/utils/stringUtils';
 
 test('isUndefinedOrEmpty case #1', () => {
   // Given
   const input = undefined;
 
   // When
-  const result = isNotUndefinedOrEmpty(input);
+  const result = isNotEmpty(input);
 
   // Then
   expect(result).toBe(false);
@@ -16,7 +16,7 @@ test('isUndefinedOrEmpty case #2', () => {
   const input = '';
 
   // When
-  const result = isNotUndefinedOrEmpty(input);
+  const result = isNotEmpty(input);
 
   // Then
   expect(result).toBe(false);
@@ -27,7 +27,7 @@ test('isUndefinedOrEmpty case #3', () => {
   const input = 'hello';
 
   // When
-  const result = isNotUndefinedOrEmpty(input);
+  const result = isNotEmpty(input);
 
   // Then
   expect(result).toBe(true);

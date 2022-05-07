@@ -61,7 +61,8 @@ test('combinedAddress case #5', () => {
   // Given
   const item: Brewery = {
     id: '',
-    street: '1802 Telegraph Ave',
+    street: '',
+    city: 'Oakland',
     state: 'California',
   };
 
@@ -69,7 +70,7 @@ test('combinedAddress case #5', () => {
   const result = combinedAddress(item);
 
   // Then
-  expect(result).toBe('1802 Telegraph Ave, California');
+  expect(result).toBe('Oakland, California');
 });
 
 test('combinedAddress case #6', () => {

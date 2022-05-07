@@ -19,6 +19,6 @@
 2. Go to project's root directory, `cd <project name>`
 3. Run `yarn` to install packages/dependencies
 4. To start metro server run `yarn start`
-5. Run `yarn ios` to lauch iOS and `yarn android` for android
+5. Run `yarn ios` to launch iOS and `yarn android` for android
 6. Run `yarn lint --fix` to format the code
 7. Run `yarn test` for testing

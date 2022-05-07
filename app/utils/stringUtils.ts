@@ -1,3 +1,3 @@
-export const isNotUndefinedOrEmpty = (str?: string) => {
-  return str !== undefined && str !== '';
+export const isNotEmpty = (str?: string | null) => {
+  return str != null && str !== undefined && str !== '';
 };
