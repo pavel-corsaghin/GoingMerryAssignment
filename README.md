@@ -1,6 +1,6 @@
 # 🚀 Breweries App
 
-## Libraries and framework used
+## Libraries and frameworks used
 - [Typescript](https://www.typescriptlang.org/) support.
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [i18next](https://react.i18next.com/)
